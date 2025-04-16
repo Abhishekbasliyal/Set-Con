@@ -8,11 +8,11 @@ face_cascade = cv2.CascadeClassifier('haarcascade_files/haarcascade_frontalface_
 
 eye_cascade = cv2.CascadeClassifier('haarcascade_files/haarcascade_eye.xml')
 
-video_file_name = "sample/live_vid2.mp4"
+video_file_name = "sample/live_vid.mp4"
 
 video_emotion_model_path = 'models/model_num.hdf5'
 
-use_live_video=False
+use_live_video=True
 
 emotion_classifier = load_model(video_emotion_model_path, compile=False)
 EMOTIONS = ["angry" ,"disgust","fear", "happy", "sad", "surprised",
